@@ -10,8 +10,8 @@ export class RecipeListComponent implements OnInit {
   @Output() recipeWasSelected = new EventEmitter<Recipe>();
 
   recipes: Recipe[] = [
-    new Recipe("A Test Recipe", "This is simply a test", "https://rb.gy/fx8ybf"),
-    new Recipe("Another Test Recipe", "This is simply a test", "https://rb.gy/fx8ybf")
+    new Recipe("A Test Recipe", "This is simply a test", "assets/images/recipe-1538714.jpg"),
+    new Recipe("Another Test Recipe", "This is simply a test", "assets/images/recipe-1538714.jpg")
   ];
 
   constructor() { }

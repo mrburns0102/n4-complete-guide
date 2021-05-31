@@ -1,6 +1,6 @@
 <div class="row">
   <div class="col-xs-12">
-      <img src ="" alt="" class="image-responsive">
+      <img [src] ="recipe.imagePath" alt="{{ recipe.name }}" class="img-responsive">
   </div>
 </div>
 <div class="row">
@@ -14,7 +14,7 @@
         <button type="button" class="btn btn-primary dropdown-toogle">Manage Recipe <span class="caret"></span>
         </button>
         <ul class="dropdown-menu">
-          <li><a href="#">Add Ingredients to Shopping List</a></li>
+          <li><a href="#">To Shopping List</a></li>
           <li><a href="#">Edit Recipe</a></li>
           <li><a href="#">Delete Recipe</a></li>
         </ul>
@@ -23,7 +23,7 @@
 </div>
 <div class="row">
   <div class="col-xs-12">
-    Description
+    {{ recipe.description }}
   </div>
 </div>
 <div class="row">
